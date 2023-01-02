@@ -36,7 +36,6 @@ export default function App() {
   return (
     <View style={style.container} onLayout={onLayoutRootView}>
       <ImageBackground style={style.image} source={require('./assets/images/mainBgImage.jpg')}>
-        {!isLoggedIn ? (
           <NavigationContainer>
             <AuthStack.Navigator>
               <AuthStack.Screen options={{ headerShown: false }} name="Login" component={Login} />
@@ -47,15 +46,37 @@ export default function App() {
               />
             </AuthStack.Navigator>
           </NavigationContainer>
-        ) : (
-          <NavigationContainer>
-            <MainTab.Navigator>
-              <MainTab.Screen name="Posts" component={PostsScreen} />
-              <MainTab.Screen name="Profile" component={ProfileScreen} />
-            </MainTab.Navigator>
-          </NavigationContainer>
-        )}
       </ImageBackground>
     </View>
   );
 }
+
+
+
+
+//   return (
+//     <View style={style.container} onLayout={onLayoutRootView}>
+//       <ImageBackground style={style.image} source={require('./assets/images/mainBgImage.jpg')}>
+//         {!isLoggedIn ? (
+//           <NavigationContainer>
+//             <AuthStack.Navigator>
+//               <AuthStack.Screen options={{ headerShown: false }} name="Login" component={Login} />
+//               <AuthStack.Screen
+//                 options={{ headerShown: false }}
+//                 name="Register"
+//                 component={Register}
+//               />
+//             </AuthStack.Navigator>
+//           </NavigationContainer>
+//         ) : (
+//           <NavigationContainer>
+//             <MainTab.Navigator>
+//               <MainTab.Screen name="Posts" component={PostsScreen} />
+//               <MainTab.Screen name="Profile" component={ProfileScreen} />
+//             </MainTab.Navigator>
+//           </NavigationContainer>
+//         )}
+//       </ImageBackground>
+//     </View>
+//   );
+// }

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BLOG",
-    "slug": "blog-react-native",
+    "name": "ReactNativeApp",
+    "slug": "ReactNativeApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -36,10 +36,6 @@
       "eas": {
         "projectId": "496f0c95-6bf9-46e5-a9b2-e9cc4f630142"
       }
-    },
-    "owner": "gespenster",
-    "runtimeVersion": {
-      "policy": "sdkVersion"
     }
   }
 }
